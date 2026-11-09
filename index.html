@@ -43,6 +43,7 @@
       background: radial-gradient(circle at 50% 15%, #2a084a 0%, #0c011b 100%);
       min-height: 100vh;
       color: #ffffff;
+      scroll-behavior: smooth;
     }
     .gold-glow {
       box-shadow: 0 0 30px rgba(245, 183, 0, 0.28);
@@ -71,7 +72,7 @@
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-red-600 via-crimsonRed to-rose-700 text-white font-bold text-xs sm:text-sm tracking-wide shadow-lg border border-red-400 mb-3 animate-pulse">
         <span>🚨</span>
         <span class="font-sans" dir="ltr">10 NOV - 8:00 PM</span>
-        <span class="font-urdu urdu-text mr-1">سیل لائیو الرٹ!</span>
+        <span class="font-urdu urdu-text mr-1">سیل لائیو الرٹ![cite: 1]</span>
       </div>
 
       <!-- Channel Official Badge -->
@@ -89,33 +90,16 @@
       </p>
     </header>
 
-    <!-- Rules & Strict Disqualification Notice Card -->
-    <div class="glass-card rounded-2xl p-4 sm:p-5 border border-red-500/40 bg-red-950/20 mb-6 shadow-xl">
-      <div class="flex items-center gap-2 mb-2 border-b border-red-500/30 pb-2">
-        <span class="text-xl">⚠️</span>
-        <h2 class="font-urdu font-bold text-base text-red-400 urdu-text">لازمی شرائط و قواعد (Rules & Qualification)</h2>
-      </div>
-      <ul class="space-y-2 font-urdu text-xs sm:text-sm urdu-text text-gray-200">
-        <li class="flex items-start gap-2">
-          <span class="text-emeraldGreen font-bold mt-0.5">✔</span>
-          <span>صرف وہی امیدوار **کوالیفائی (Qualify)** کرے گا جس نے تمام 4 مراحل ایمانداری سے مکمل کیے ہوں گے۔</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-emeraldGreen font-bold mt-0.5">✔</span>
-          <span>درخواست جمع ہونے کے بعد **اگلے 24 گھنٹوں میں ہماری ٹیم خود** منتخب ونرز سے ان کے واٹس ایپ پر رابطہ کر کے فوری ریوارڈ بھیجے گی۔</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-red-400 font-bold mt-0.5">✖</span>
-          <span>ویڈیو کو آگے اسکیپ کر کے دیکھنے والا، نامکمل یا جعلی اسکرین شاٹ اپلوڈ کرنے والا **فوری طور پر فیل (Disqualified)** قرار دیا جائے گا۔</span>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Step 1: Video Action Card -->
+    <!-- Step 1: Video Action Card (Top Placement - Direct Action) -->
     <div class="glass-card rounded-2xl p-4 sm:p-5 neon-border mb-6 shadow-xl">
-      <div class="flex items-center gap-2 mb-3 border-b border-purple-800/80 pb-2">
-        <span class="w-6 h-6 rounded-full bg-brandGold text-brandDark font-sans font-bold text-xs flex items-center justify-center">1</span>
-        <h2 class="font-urdu font-bold text-base text-brandGold urdu-text">پہلا مرحلہ: ویڈیو دیکھیں اور لائک کریں</h2>
+      <div class="flex items-center justify-between border-b border-purple-800/80 pb-2 mb-3">
+        <div class="flex items-center gap-2">
+          <span class="w-6 h-6 rounded-full bg-brandGold text-brandDark font-sans font-bold text-xs flex items-center justify-center">1</span>
+          <h2 class="font-urdu font-bold text-base text-brandGold urdu-text">پہلا مرحلہ: ویڈیو دیکھیں اور لائک کریں</h2>
+        </div>
+        <span class="text-[11px] font-urdu text-emeraldGreen font-bold urdu-text bg-emeraldGreen/10 px-2 py-0.5 rounded-full border border-emeraldGreen/30">
+          لازمی مرحلہ
+        </span>
       </div>
 
       <div class="space-y-4 font-urdu text-xs sm:text-sm urdu-text text-gray-200">
@@ -123,8 +107,8 @@
           نیچے دیے گئے بٹن پر کلک کریں، یوٹیوب پر <span class="text-neonYellow font-bold">Burhan Telecom News</span> کی اورنج بیگ والی دراز 11.11 ویڈیو کھول کر مکمل آخر تک سنیں، لائک کریں اور اپنے واٹس ایپ اسٹیٹس پر شیئر کریں:
         </p>
 
-        <!-- Big Red YouTube Direct CTA Button with "Watch Now" -->
-        <a href="https://www.youtube.com/results?search_query=daraz+11+11+sale+2026+triple+discount+formula" 
+        <!-- Big Red YouTube Direct CTA Button with exact target query -->
+        <a href="https://www.youtube.com/results?search_query=daraz+11.11+sale+triple+discount+formula+2026" 
            target="_blank" 
            rel="noopener noreferrer"
            class="w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 via-crimsonRed to-darazOrange hover:brightness-110 active:scale-[0.98] text-white font-sans text-sm font-bold py-4 px-4 rounded-xl shadow-2xl transition-all border border-red-400/40">
@@ -137,11 +121,19 @@
         <div class="text-center text-[11px] text-gray-400">
           💡 بٹن دبانے پر یوٹیوب کھلے گا، وہاں ہماری اورنج بیگ والی ویڈیو پر کلک کر کے پوری سنیں۔
         </div>
+
+        <!-- Scroll down guide -->
+        <div class="text-center pt-1 border-t border-purple-800/50">
+          <a href="#formContainer" class="inline-flex items-center gap-1.5 text-xs text-brandGold hover:text-white font-urdu urdu-text transition-colors">
+            <span>ویڈیو دیکھنے کے بعد نیچے فارم پُر کریں</span>
+            <span class="animate-bounce">👇</span>
+          </a>
+        </div>
       </div>
     </div>
 
     <!-- Step 2: Submission Form -->
-    <div id="formContainer" class="glass-card rounded-2xl p-5 sm:p-6 neon-border gold-glow">
+    <div id="formContainer" class="glass-card rounded-2xl p-5 sm:p-6 neon-border gold-glow mb-6">
       <div class="flex items-center gap-2 mb-4 border-b border-purple-800/80 pb-2">
         <span class="w-6 h-6 rounded-full bg-brandGold text-brandDark font-sans font-bold text-xs flex items-center justify-center">2</span>
         <h2 class="font-urdu font-bold text-base text-brandGold urdu-text">دوسرا مرحلہ: تفصیلات، کوئز اور اسکرین شاٹس</h2>
@@ -259,6 +251,33 @@
       </form>
     </div>
 
+    <!-- Friendly Rules Accordion / Card (Placed at the bottom so users don't bounce) -->
+    <details class="glass-card rounded-2xl p-4 border border-purple-700/50 bg-purple-950/40 mb-6 shadow-md transition-all group">
+      <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+        <div class="flex items-center gap-2">
+          <span class="text-base">📜</span>
+          <h2 class="font-urdu font-bold text-xs sm:text-sm text-gray-200 urdu-text">
+            گیو اوے کے اصول اور اہلیت کی شرائط (پڑھنے کے لیے کلک کریں)
+          </h2>
+        </div>
+        <span class="text-xs text-brandGold group-open:rotate-180 transition-transform duration-200">▼</span>
+      </summary>
+      <div class="mt-3 pt-3 border-t border-purple-800/60 font-urdu text-xs urdu-text text-gray-300 space-y-1.5">
+        <p class="flex items-start gap-1.5">
+          <span class="text-emeraldGreen font-bold">✔</span>
+          <span>صرف وہی امیدوار کوالیفائی کرے گا جس نے تمام مراحل ایمانداری سے مکمل کیے ہوں۔</span>
+        </p>
+        <p class="flex items-start gap-1.5">
+          <span class="text-emeraldGreen font-bold">✔</span>
+          <span>درخواست جمع ہونے کے بعد اگلے 24 گھنٹوں میں ہماری ٹیم منتخب ونرز سے واٹس ایپ پر رابطہ کرے گی۔</span>
+        </p>
+        <p class="flex items-start gap-1.5">
+          <span class="text-red-400 font-bold">✖</span>
+          <span>ویڈیو اسکیپ کرنے یا جعلی اسکرین شاٹ اپلوڈ کرنے والا نااہل (Disqualified) قرار دیا جائے گا۔</span>
+        </p>
+      </div>
+    </details>
+
     <!-- Success Modal Card (Celebration) -->
     <div id="successCard" class="hidden glass-card rounded-2xl p-6 sm:p-8 neon-border gold-glow text-center">
       <div class="w-16 h-16 rounded-full bg-emeraldGreen/20 border-2 border-emeraldGreen flex items-center justify-center mx-auto mb-3 text-3xl">
@@ -293,7 +312,7 @@
       </div>
     </div>
 
-    <!-- Clean User-Facing Footer (Admin panel removed completely) -->
+    <!-- Clean User-Facing Footer -->
     <footer class="mt-8 text-center text-xs text-gray-400 font-urdu urdu-text">
       © 2026 Burhan Telecom News & Tech IT Master. تمام حقوق محفوظ ہیں۔
     </footer>
@@ -333,7 +352,6 @@
           const img = new Image();
           img.src = e.target.result;
           img.onload = function() {
-            // Scale down to max 800px width/height for fast submission
             const maxDim = 800;
             let width = img.width;
             let height = img.height;
