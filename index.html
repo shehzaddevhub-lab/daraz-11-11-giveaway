@@ -8,7 +8,7 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts: Noto Nastaliq Urdu, Noto Sans Arabic & Inter -->
+  <!-- Google Fonts: Noto Nastaliq Urdu & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
@@ -90,7 +90,7 @@
       </p>
     </header>
 
-    <!-- Step 1: Video Action Card (Top Placement - Direct Action) -->
+    <!-- Step 1: Video Action Card (Top Priority) -->
     <div class="glass-card rounded-2xl p-4 sm:p-5 neon-border mb-6 shadow-xl">
       <div class="flex items-center justify-between border-b border-purple-800/80 pb-2 mb-3">
         <div class="flex items-center gap-2">
@@ -98,7 +98,7 @@
           <h2 class="font-urdu font-bold text-base text-brandGold urdu-text">پہلا مرحلہ: ویڈیو دیکھیں اور لائک کریں</h2>
         </div>
         <span class="text-[11px] font-urdu text-emeraldGreen font-bold urdu-text bg-emeraldGreen/10 px-2 py-0.5 rounded-full border border-emeraldGreen/30">
-          لازمی مرحلہ
+          لازمی ٹاسک
         </span>
       </div>
 
@@ -107,7 +107,7 @@
           نیچے دیے گئے بٹن پر کلک کریں، یوٹیوب پر <span class="text-neonYellow font-bold">Burhan Telecom News</span> کی اورنج بیگ والی دراز 11.11 ویڈیو کھول کر مکمل آخر تک سنیں، لائک کریں اور اپنے واٹس ایپ اسٹیٹس پر شیئر کریں:
         </p>
 
-        <!-- Big Red YouTube Direct CTA Button with exact target query -->
+        <!-- Big Red YouTube Direct CTA Button with exact search keyword -->
         <a href="https://www.youtube.com/results?search_query=daraz+11.11+sale+triple+discount+formula+2026" 
            target="_blank" 
            rel="noopener noreferrer"
@@ -122,10 +122,10 @@
           💡 بٹن دبانے پر یوٹیوب کھلے گا، وہاں ہماری اورنج بیگ والی ویڈیو پر کلک کر کے پوری سنیں۔
         </div>
 
-        <!-- Scroll down guide -->
+        <!-- Scroll down indicator -->
         <div class="text-center pt-1 border-t border-purple-800/50">
           <a href="#formContainer" class="inline-flex items-center gap-1.5 text-xs text-brandGold hover:text-white font-urdu urdu-text transition-colors">
-            <span>ویڈیو دیکھنے کے بعد نیچے فارم پُر کریں</span>
+            <span>ویڈیو مکمل دیکھنے کے بعد نیچے فارم پُر کریں</span>
             <span class="animate-bounce">👇</span>
           </a>
         </div>
@@ -157,10 +157,10 @@
           </label>
           <input type="tel" id="userWhatsApp" required placeholder="03001234567" pattern="[0-9]{11}"
                  class="w-full bg-purple-950/70 border border-purple-700/70 rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-brandGold focus:ring-1 focus:ring-brandGold transition-all font-sans text-left" dir="ltr">
-          <span class="text-[11px] text-gray-400 font-sans mt-0.5 block" dir="ltr">Format: 11 digits (e.g. 03001234567)</span>
+          <span class="text-[11px] text-gray-400 font-sans mt-0.5 block" dir="ltr">فارمیٹ: 11 ہندسے (جیسے 03001234567)</span>
         </div>
 
-        <!-- EasyPaisa / JazzCash / Mobile Load Account Details -->
+        <!-- Account Details -->
         <div>
           <label class="block font-urdu text-xs sm:text-sm font-semibold text-gray-200 mb-1 urdu-text">
             ایزی پیسہ / جاز کیش / موبائل لوڈ نمبر اور اکاؤنٹ ہولڈر کا نام <span class="text-red-400">*</span>
@@ -169,23 +169,23 @@
                  class="w-full bg-purple-950/70 border border-purple-700/70 rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-brandGold focus:ring-1 focus:ring-brandGold transition-all font-sans text-right">
         </div>
 
-        <!-- Section: 3 Mandatory Video Quiz Questions (Manual Typing - NO MCQ) -->
+        <!-- Section: 3 Mandatory Video Quiz Questions (Manual Typing) -->
         <div class="pt-2 border-t border-purple-800/80">
           <div class="flex items-center gap-1.5 mb-2">
             <span class="text-base">✍️</span>
             <span class="font-urdu font-bold text-sm text-neonYellow urdu-text">ویڈیو سوالات (ویڈیو سن کر خود ٹائپ کریں):</span>
           </div>
 
-          <!-- Question 1: Manual Input -->
+          <!-- Question 1 -->
           <div class="bg-purple-950/80 border border-purple-700/80 p-3.5 rounded-xl mb-3">
             <label class="block font-urdu text-xs sm:text-sm font-semibold text-white mb-1.5 urdu-text">
-              1. دراز 11.11 میگا سیل شروع ہونے کی درست تاریخ اور رات کا ٹائم کیا ہے؟ <span class="text-red-400">*</span>
+              1. دراز 11.11 میگا سیل شروع ہونے کی درست تاریخ اور رات کا ٹائم کیا ہے؟ <span class="text-red-400">*</span>[cite: 1]
             </label>
             <input type="text" id="quizTiming" required placeholder="مثلاً: تاریخ اور رات کا وقت خود لکھیں..."
                    class="w-full bg-purple-900/60 border border-purple-600/70 rounded-lg px-3 py-2 text-xs sm:text-sm text-white placeholder-gray-400 focus:outline-none focus:border-brandGold transition-all font-sans text-right">
           </div>
 
-          <!-- Question 2: Manual Input -->
+          <!-- Question 2 -->
           <div class="bg-purple-950/80 border border-purple-700/80 p-3.5 rounded-xl mb-3">
             <label class="block font-urdu text-xs sm:text-sm font-semibold text-white mb-1.5 urdu-text">
               2. ویڈیو کے مطابق بینک کارڈ کے ذریعے ادائیگی پر کتنے فیصد تک ڈسکاؤنٹ ملتا ہے؟ <span class="text-red-400">*</span>
@@ -194,7 +194,7 @@
                    class="w-full bg-purple-900/60 border border-purple-600/70 rounded-lg px-3 py-2 text-xs sm:text-sm text-white placeholder-gray-400 focus:outline-none focus:border-brandGold transition-all font-sans text-right">
           </div>
 
-          <!-- Question 3: Manual Input -->
+          <!-- Question 3 -->
           <div class="bg-purple-950/80 border border-purple-700/80 p-3.5 rounded-xl">
             <label class="block font-urdu text-xs sm:text-sm font-semibold text-white mb-1.5 urdu-text">
               3. آن لائن شاپنگ فراڈ سے بچنے کے لیے پارسل کھولتے وقت کیا احتیاط کرنی چاہیے؟ <span class="text-red-400">*</span>
@@ -251,7 +251,7 @@
       </form>
     </div>
 
-    <!-- Friendly Rules Accordion / Card (Placed at the bottom so users don't bounce) -->
+    <!-- Soft Rules Accordion (Bottom Placement) -->
     <details class="glass-card rounded-2xl p-4 border border-purple-700/50 bg-purple-950/40 mb-6 shadow-md transition-all group">
       <summary class="flex items-center justify-between cursor-pointer list-none select-none">
         <div class="flex items-center gap-2">
@@ -376,7 +376,7 @@
       });
     }
 
-    // Form Submit handling
+    // Form Submit handling (Optimized with JSON Payload)
     const form = document.getElementById('giveawayForm');
     const submitBtn = document.getElementById('submitBtn');
     const btnText = document.getElementById('btnText');
@@ -417,26 +417,27 @@
           fileToBase64(statusFileInput.files[0])
         ]);
 
-        // Create payload
-        const formData = new URLSearchParams();
-        formData.append('ticket', ticketId);
-        formData.append('name', name);
-        formData.append('whatsapp', whatsapp);
-        formData.append('account', account);
-        formData.append('quizTiming', quizTiming);
-        formData.append('quizDiscount', quizDiscount);
-        formData.append('quizFraud', quizFraud);
-        formData.append('screenshotWatch', watchBase64);
-        formData.append('screenshotStatus', statusBase64);
+        // Clean JSON Payload to eliminate payload size limits
+        const payload = {
+          ticket: ticketId,
+          name: name,
+          whatsapp: whatsapp,
+          account: account,
+          quizTiming: quizTiming,
+          quizDiscount: quizDiscount,
+          quizFraud: quizFraud,
+          screenshotWatch: watchBase64,
+          screenshotStatus: statusBase64
+        };
 
-        // Submit via no-cors mode to Apps Script
+        // Submit via text/plain to prevent CORS preflight and allow reliable Apps Script processing
         await fetch(GOOGLE_SCRIPT_URL, {
           method: 'POST',
           mode: 'no-cors',
           headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Type': 'text/plain;charset=utf-8',
           },
-          body: formData.toString()
+          body: JSON.stringify(payload)
         });
 
         showSuccessView(ticketId);
